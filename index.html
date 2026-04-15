@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/icono.ico" type="image/x-icon">
-    <title>Nivaldo - Software Developer</title>
-    <meta name="description" content="I am Nivaldo Quiñones a web developer, know my work and myself."/>
+    <title>Miguel Nivaldo Quiñones - Ingeniero de Software</title>
+    <meta name="description" content="Portafolio de Miguel Nivaldo Alejandro Quiñones Garcia, Ingeniero de Software con mas de 5 anos de experiencia en sistemas web orientados a negocio."/>
     <meta property="og:image" content="img/CIUD5281.jpg">
-    <meta name="keywords" content="nivaldo, Web, develop, nivaldo quiñones, nivis"/>
-    <meta name="author" content="Ing. Nivaldo Quiñones - Web Developer" />
+    <meta name="keywords" content="miguel nivaldo, ingeniero de software, react, dotnet, csharp, portfolio"/>
+    <meta name="author" content="Miguel Nivaldo Alejandro Quinones Garcia" />
     <meta name="copyright" content="Nivaldo Quiñones" />
     <script src="elevator.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -18,19 +18,24 @@
 <body class="bg-gray-100">
     <!-- ME INFO -->
     <div class="min-h-screen flex flex-col items-center justify-center container mx-auto">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium mb-3 nivaldoTitle1 text-center">Hello, I'm Nivaldo Quiñones</h1>
-        <h5 class="font-normal text-lg md:text-xl lg:text-2xl text-blue-600 mb-7 nivaldoTitle1">Software Development</h5>  
+        <div id="languageSelector" class="absolute top-5 right-5 flex gap-3">
+            <button id="langES" title="Español" class="text-3xl md:text-4xl hover:scale-125 transition duration-300 cursor-pointer">🇲🇽</button>
+            <button id="langEN" title="English" class="text-3xl md:text-4xl hover:scale-125 transition duration-300 cursor-pointer">🇺🇸</button>
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium mb-3 nivaldoTitle1 text-center">Miguel Nivaldo Alejandro Quinones Garcia</h1>
+        <h5 class="font-normal text-lg md:text-xl lg:text-2xl text-blue-600 mb-3 nivaldoTitle1">Ingeniero de Software</h5>
+        <p class="font-normal text-sm md:text-lg text-gray-700 mb-5 nivaldoTitle1">djnivis@gmail.com | 312 140 2657</p>
         <div class="flex items-center justify-self-center nivaldoBtn">
-            <a href="mailto:djnivis@gmail.com""><img class="m-5 h-7 w-10 md:h-12 md:w-14" src="img/google-gmail.svg" alt="gmail"></a>
+            <a href="mailto:djnivis@gmail.com"><img class="m-5 h-7 w-10 md:h-12 md:w-14" src="img/google-gmail.svg" alt="gmail"></a>
             <a href="https://github.com/Nivaldo21" target="_blank" rel="noopener noreferrer"><img class="m-5 h-8 w-11 md:h-12 md:w-14" src="img/github-icon.svg" alt="github"></a>
-            <a href="https://www.linkedin.com/in/nivaldo-qui%C3%B1ones-314629148/" target="_blank" rel="noopener noreferrer"><img class="m-5 h-8 w-11 md:h-12 md:w-14" src="img/linkedin-icon.svg" alt="linkedIn">
+            <a href="https://www.linkedin.com/in/nivaldo-qui%C3%B1ones-314629148/" target="_blank" rel="noopener noreferrer"><img class="m-5 h-8 w-11 md:h-12 md:w-14" src="img/linkedin-icon.svg" alt="linkedIn"></a>
         </div>   
         <div class="nivaldoSlideDown mt-5">
-            <a href="doc/CV.pdf" download class="mt-5 py-2 px-5 text-xs md:py-3 md:px-6 md:text-base lg:px-7 border bg-blue-600 text-white rounded-xl hover:bg-blue-700 transform hover:scale-110 motion-reduce:transform-none transition duration-700 ease-in-out"> Download Resume</a>
+            <a href="doc/CV_3_1.pdf" download class="mt-5 py-2 px-5 text-xs md:py-3 md:px-6 md:text-base lg:px-7 border bg-blue-600 text-white rounded-xl hover:bg-blue-700 transform hover:scale-110 motion-reduce:transform-none transition duration-700 ease-in-out">Descargar CV</a>
         </div>
         
         <div class="mt-5 text-center bottom-12 absolute nivaldoSlideDown">
-            <p class="mb-2 text-gray-700 text-xs md:text-base lg:text-lg font-semibold">Slide Down</p>
+            <p class="mb-2 text-gray-700 text-xs md:text-base lg:text-lg font-semibold">Desliza hacia abajo</p>
             <img class="h-5 w-14 lg:h-8 lg:w-20 transform rotate-180 animate-bounce mx-auto" src="img/arrow.svg" alt="elevator">
         </div>
     </div>
@@ -47,12 +52,12 @@
         </div>
         <div class="w-100 lg:w-2/3 justify-center lg:mx-auto mx-10">
             <div class="slide1">
-                <h1 class="font-medium text-4xl md:text-6xl lg:text-7xl">About <span class="text-blue-700">Me</span></h1>
-                <p class="font-normal text-base md:text-lg lg:text-xl mt-5">I am a software developer passionate about learning new technologies and always looking for challenges that allow me to grow professionally. I have experience in the development of simple and complex web pages, as well as in the creation of both full-stack and front-end web applications. I specialize in solving specific problems and improving processes, using innovative and efficient technological tools.</p>
+                <h1 class="font-medium text-4xl md:text-6xl lg:text-7xl" data-i18n="aboutTitle">Sobre <span class="text-blue-700">Mi</span></h1>
+                <p class="font-normal text-base md:text-lg lg:text-xl mt-5">Ingeniero de software con mas de 5 anos de experiencia en el desarrollo de sistemas web orientados a negocio. Especializado en plataformas de gestion de clientes, membresias, pagos, ventas y automatizacion de procesos administrativos. Experiencia en puestos de tiempo completo y proyectos freelance, colaborando con equipos de negocio, directores y clientes finales para crear soluciones escalables y de alto valor operativo.</p>
             </div>
             <div class="md:flex justify-center slide15">
                 <div class="w-full lg:w-1/2">
-                    <h5 class="text-xl my-4 font-semibold text-blue-600"> Aptitudes</h5>
+                    <h5 class="text-xl my-4 font-semibold text-blue-600" data-i18n="softSkillsTitle">Habilidades blandas</h5>
                         <ul class="list-disc space-y-1">
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -60,7 +65,7 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                                 </span>
-                                <p class="ml-2 text-base">Management of web frameworks</p>
+                                <p class="ml-2 text-base">Comunicacion efectiva con equipos tecnicos y de negocio</p>
                             </li>
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -68,7 +73,7 @@
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
                                 </span>
-                                <p class="ml-2">DB design</p>
+                                <p class="ml-2">Autonomia y proactividad en proyectos tiempo completo y freelance</p>
                             </li>
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -76,7 +81,7 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                                 </span>
-                                <p class="ml-2">Team Work</p>
+                                <p class="ml-2">Trabajo en equipo bajo metodologias agiles (SCRUM)</p>
                             </li>
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -84,7 +89,7 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                                 </span>
-                                <p class="ml-2">Willingness to learn</p>
+                                <p class="ml-2">Resolucion de problemas con enfoque en valor operativo</p>
                             </li>
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -92,7 +97,7 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                                 </span>
-                                <p class="ml-2">Facility to understand programing languages</p>
+                                <p class="ml-2">Adaptabilidad a distintos stacks y dominios de negocio</p>
                             </li>
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -100,7 +105,7 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                                 </span>
-                                <p class="ml-2">Handling of libraries and tools</p>
+                                <p class="ml-2">Orientacion al detalle en pruebas, seguridad y UX/UI</p>
                             </li>
                             <li class="flex items-start">
                                 <span class="h-6 flex items-center sm:h-7">
@@ -108,12 +113,12 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                                 </span>
-                                <p class="ml-2">English B1</p>
+                                <p class="ml-2">Colaboracion con equipos multidisciplinarios</p>
                             </li>
                         </ul>
                 </div>
                 <div class="w-full lg:w-1/2">
-                    <h5 class="text-blue-600 text-xl my-4 font-semibold"> Interests</h5>
+                    <h5 class="text-blue-600 text-xl my-4 font-semibold" data-i18n="dominantTechTitle">Tecnologias dominantes</h5>
                     <ul class="list-disc space-y-1">
                         <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -121,7 +126,7 @@
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                             </span>
-                            <p class="ml-2">Micro Front-end</p>
+                            <p class="ml-2">React JS, React Native y Expo</p>
                         </li>
                         <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -129,7 +134,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             </span>
-                            <p class="ml-2">Database Design</p>
+                            <p class="ml-2">Angular 15+, Vue JS y JavaScript (ES6+)</p>
                         </li>
                         <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -137,7 +142,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             </span>
-                            <p class="ml-2">Front-end Develop</p>
+                            <p class="ml-2">.NET / C#, Node.js, NestJS y Laravel</p>
                         </li>
                         <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -145,7 +150,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             </span>
-                            <p class="ml-2">API development</p>
+                            <p class="ml-2">APIs REST con JWT y arquitectura Onion</p>
                         </li>
                         <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -153,7 +158,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             </span>
-                            <p class="ml-2">Single Page Application </p>
+                            <p class="ml-2">SQL Server, MySQL, PostgreSQL y Firebase</p>
                         </li>
                         <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -161,7 +166,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                             </svg>
                             </span>
-                            <p class="ml-2">Full stack applications</p>
+                            <p class="ml-2">Tailwind CSS, Bootstrap, Material y Git</p>
                         </li>
                     </ul>
                 </div>
@@ -173,8 +178,8 @@
     <!-- EDUCATION -->
     <div class="min-h-screen self-center my-10">
         <div class="text-center slide1">
-            <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium">Education</h1>
-            <p class="text-blue-700 text-base md:text-xl lg:text-2xl my-1 lg:my-3">Know my academic preparation</p>
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium" data-i18n="educationTitle">Formacion academica</h1>
+            <p class="text-blue-700 text-base md:text-xl lg:text-2xl my-1 lg:my-3" data-i18n="educationSubtitle">Preparacion profesional y cedulas</p>
         </div>
         <div class="flex flex-wrap mx-5 justify-center ">
             <div class="relative my-10 py-2 sm:max-w-xl mx-auto slideLeft">
@@ -182,11 +187,11 @@
                     <div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl md:p-10 lg:p-12">
                         <div class="max-w-md mx-auto">
                             <div>
-                            <h1 class="text-xl md:text-3xl font-semibold">University of Colima Preparatory Number 25</h1>
+                            <h1 class="text-xl md:text-3xl font-semibold">Universidad de Colima - Bachillerato Tecnico No. 25</h1>
                             </div>
                             <div class="divide-y divide-gray-200">
                                 <div class="py-5 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                                    <p class="font-light text-sm md:text-base">From 2012 to 2015</p>
+                                    <p class="font-light text-sm md:text-base">Tecnico Analista Programador</p>
                                     <ul class="list-disc space-y-1 text-sm md:text-base">
                                         <li class="flex items-start">
                                             <span class="h-6 flex items-center sm:h-7">
@@ -194,7 +199,7 @@
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                             </svg>
                                             </span>
-                                            <p class="ml-2">Professional license 9843670 </p>
+                                            <p class="ml-2">Cedula profesional: 9843570</p>
                                         </li>
                                         <li class="flex items-start">
                                             <span class="h-6 flex items-center sm:h-7">
@@ -202,7 +207,7 @@
                                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                                 </svg>
                                             </span>
-                                            <p class="ml-2">Technical Degree as Analyst Programmer </p>
+                                            <p class="ml-2">Enfoque en desarrollo y analisis de sistemas</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -215,11 +220,11 @@
                 <div class="relative px-4 py-10 bg-white shadow-lg rounded-3xl md:p-10 lg:p-12">
                   <div class="max-w-md mx-auto">
                     <div>
-                      <h1 class="text-xl md:text-3xl font-semibold">Technology of Mexico Campus Colima</h1>
+                      <h1 class="text-xl md:text-3xl font-semibold">Tecnologico Nacional de Mexico - Campus Colima</h1>
                     </div>
                     <div class="divide-y divide-gray-200">
                       <div class="py-5 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                        <p class="font-light text-sm md:text-base">From 2015 to 2020</p>
+                        <p class="font-light text-sm md:text-base">Ingenieria en Sistemas Computacionales</p>
                         <ul class="list-disc space-y-1 text-sm md:text-base">
                           <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -227,7 +232,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                               </svg>
                             </span>
-                            <p class="ml-2">Professional license 12472952</p>
+                            <p class="ml-2">Cedula profesional: 12472952</p>
                           </li>
                           <li class="flex items-start">
                             <span class="h-6 flex items-center sm:h-7">
@@ -235,7 +240,7 @@
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                               </svg>
                             </span>
-                            <p class="ml-2">Computer Systems Engineer</p>
+                            <p class="ml-2">Formacion en arquitectura, desarrollo y gestion de software</p>
                           </li>
                         </ul>
                       </div>
@@ -248,492 +253,269 @@
     </div>
 
     <!-- EXPERIENCE -->
-    <div class="min-h-screen flex flex-col items-center justify-center">
-        <div class="text-center slide1">
-            <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium">My Experience</h1>
-            <p class="text-blue-700 text-base md:text-xl lg:text-2xl my-1 md:my-3">Slide and Get to know my work</p>
-        </div>
-    </div>
-
-    <!-- BA SOLUTIONS-->
-    <div class="min-h-screen items-center flex flex-col lg:flex-row justify-center">
-        <div class="w-auto lg:w-1/2 m-14 text-left md:text-right slide1">
-            <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl">BA Solutions</h1>
-            <span class="text-blue-700 text-sm md:text-xl">FrontEnd Developer | Angular - 2023 (3 months)</span>
-            <ul class="font-light text-3xl mt-4">
-                <li class="mb-5">
-                    <p class="font-normal text-xl lg:text-2xl mt-4"> Development of new functionalities of a web system for a pharmaceutical company, based on established designs and requirements, <br> using Angular v15, GitLab.</p>
-                </li>
-            </ul>
+    <div class="min-h-screen container mx-auto py-10 px-4 md:px-6 experience-whatsapp">
+        <div class="text-center slide1 mb-10">
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium" data-i18n="experienceTitle">Experiencia profesional</h1>
+            <p class="text-blue-700 text-base md:text-xl lg:text-2xl my-1 md:my-3" data-i18n="experienceSubtitle">Descubre los proyectos y en las empresas que he trabajado</p>
         </div>
 
-        <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto slide1">
-            <div class="flex flex-col items-center justify-center text-center curseFirst">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                        July 2023
-                    </div>
+        <div class="relative py-2 slide1">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 shadow-lg transform -skew-y-2 sm:skew-y-0 -rotate-1 rounded-3xl"></div>
+            <div class="relative px-1 md:px-2 lg:px-3">
+                <div class="wa-web-shell">
+            <aside class="wa-sidebar" aria-label="Lista de experiencias">
+                <div class="wa-sidebar-head">
+                    <p data-i18n="chatsLabel">Chats de experiencia</p>
                 </div>
-            </div>
 
-            <div class="flex mb-5 curseSecond">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/ba.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">BA Solutions</p>
-                        <small class="text-gray-500 font-light ">Hello Nivaldo, we need a developer with experience in angular, to develop new modules and issues of already developed modules for a web management system that we are in urgent need of finishing, would you like to work whit us?</small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 flex-row-reverse curseFourth">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-4 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Of course, I would like to work with you. I'll help you with the Angular project </small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">09:58 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 curseEight">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/ba.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">BA Solutions</p>
-                        <small class="text-gray-500 font-light ">Great!! thank you Nivaldo </small>
-                    </div>
-                    <small class="text-gray-500 font-light">10:01 am</small>
-                </div>
-            </div>
-        </div>
-    </div>
+                <button class="wa-chat-item is-active" data-chat="embotelladora" aria-selected="true">
+                    <img src="img/eco.jpg" alt="Embotelladora de Colima">
+                    <span>
+                        <strong>Embotelladora de Colima</strong>
+                        <small>Mayo 2025 - Actualidad</small>
+                    </span>
+                </button>
 
-    <!-- UNIVERSIDAD DE COLIMA -->
-    <div class="min-h-screen items-center flex flex-col-reverse lg:flex-row justify-center">
-        <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto curseFirst">
-            <div class="flex flex-col items-center justify-center text-center">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                        Mayo 2023
-                    </div>
-                </div>
-            </div>
+                <button class="wa-chat-item" data-chat="onkimia" aria-selected="false">
+                    <img src="img/onkimia.jpg" alt="Onkimia">
+                    <span>
+                        <strong>Onkimia</strong>
+                        <small>Dic 2024 - Mayo 2025</small>
+                    </span>
+                </button>
 
-            <div class="flex mb-5 curseSecond">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/Universidad-de-Colima.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-5 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">University of Colima</p>
-                        <small class="text-gray-500 font-light ">Hello Nivaldo, I need a software developer for a project funded by CONACHYT, about a web application focused on deaf high school children.</small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 curseFourth">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/Universidad-de-Colima.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-6 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">University of Colima</p>
-                        <small class="text-gray-500 font-light ">I need you to develop from scratch the database with requirements and use cases that we will provide you with and to support the designs that will be provided for the look and feel of the platform.</small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:56 am</small>
-                </div>
-            </div>
-            <div class="flex mb-3 flex-row-reverse curseSix">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-3 w-64 md:w-96  rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Sure!!, I develop everything that is needed, with laravel and vue to develop the web application.</small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">10:00 am</small>
-                </div>
-            </div>
-            
-            <div class="flex flex-col items-center justify-center text-center curseSeven">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                        August 2023
-                    </div>
-                </div>
-            </div>
-            <div class="flex mb-5 flex-row-reverse curseEight">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-3 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Hello, the project with its sessions and games functionalities is in the github repository, with documented code and a stable version.</small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">05:00 pm</small>
-                </div>
-            </div>
-            <div class="flex mb-5 curseEight">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/Universidad-de-Colima.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-6 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">University of Colima</p>
-                        <small class="text-gray-500 font-light ">Excellent work Nivaldo, I thank you for all you did.</small>
-                    </div>
-                    <small class="text-gray-500 font-light">06:00 pm</small>
-                </div>
-            </div>
-        </div>
+                <button class="wa-chat-item" data-chat="socialhero" aria-selected="false">
+                    <img src="img/SH.png" alt="SocialHero">
+                    <span>
+                        <strong>SocialHero</strong>
+                        <small>Mayo 2022 - Dic 2022</small>
+                    </span>
+                </button>
 
-        <div class="w-auto lg:w-1/2 m-14 txt-left slide1">
-            <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl mb-1">University of Colima</h1>
-            <span class="text-blue-700 text-sm md:text-xl">Associate Software Developer | CONACYT 2023 (4 months)</span>
-            <p class="font-normal text-xl lg:text-2xl mt-4"> Support for the dvelopment of the <b>ACTIBISOR</b> web application</p>
-            <p class="font-normal text-xl lg:text-2xl mt-2"> Design the software architecture of the platform, including database, backend and frontend requirements.  </p>
-            <p class="font-normal text-xl lg:text-2xl mt-2"> Develop an educational resource platform with multimedia didactic material using Laravel SAIL v10 with Vue 3.</p>
-            <p class="font-normal text-xl lg:text-2xl mt-2"> Develop and Integrate educational video games with interactive exercises that will be part of the platform.</p>
-        </div>
-    </div>
+                <button class="wa-chat-item" data-chat="ciapacov" aria-selected="false">
+                    <img src="img/logoSolo.png" alt="CIAPACOV">
+                    <span>
+                        <strong>CIAPACOV</strong>
+                        <small>Mar 2020 - Dic 2021</small>
+                    </span>
+                </button>
 
-    <!-- UXEN-->
-    <div class="min-h-screen items-center flex flex-col lg:flex-row justify-center">
-        <div class="w-auto lg:w-1/2 m-14 text-left md:text-right slide1">
-            <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl">UXEN Neuromarketing</h1>
-            <span class="text-blue-700 text-sm md:text-xl">Software Developer - 2023 (4 months)</span>
-            <ul class="font-light text-3xl mt-4">
-                <li class="mb-5">
-                    <p class="font-normal text-xl lg:text-2xl mt-4"> Development and maintenance of web applications for different companies with different technologies, React JS and Angular for Front End, Strapi or Firebase and Express whit Mongo DB for Back end</p>
-                </li>
-            </ul>
-        </div>
+                <button class="wa-chat-item" data-chat="sis" aria-selected="false">
+                    <img src="img/educaruno.jpg" alt="EducarUno SIS">
+                    <span>
+                        <strong>EducarUno - SIS</strong>
+                        <small>Mayo 2024 - Sep 2024</small>
+                    </span>
+                </button>
 
-        <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto slide1">
-            <div class="flex flex-col items-center justify-center text-center curseFirst">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                        March 2023
-                    </div>
-                </div>
-            </div>
+                <button class="wa-chat-item" data-chat="cursos" aria-selected="false">
+                    <img src="img/educaruno.jpg" alt="EducarUno Cursos">
+                    <span>
+                        <strong>EducarUno - Cursos</strong>
+                        <small>Mayo 2025 - Jul 2025</small>
+                    </span>
+                </button>
 
-            <div class="flex mb-5 curseSecond">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/uxen.jpeg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">UXEN</p>
-                        <small class="text-gray-500 font-light ">Hi Nivaldo, we need a software developer to maintain and help us to apply several requirements to different projects, it would be for hours/half time and in different projects, it depends on the requirements, are you interested?</small>
-                    </div>
-                    <small class="text-gray-500 font-light">11:00 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 flex-row-reverse curseFourth">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-4 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light">Yes of course, I will be working with whatever is required and part-time on the necessary projects.</small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">11:58 am</small>
-                </div>
-            </div>
-        </div>
-    </div>
+                <button class="wa-chat-item" data-chat="basolutions" aria-selected="false">
+                    <img src="img/ba.png" alt="BA Solutions">
+                    <span>
+                        <strong>BA Solutions</strong>
+                        <small>Jul 2023 - Dic 2023</small>
+                    </span>
+                </button>
 
-    <!-- SOCIAL HERO-->
-    <div class="min-h-screen items-center flex flex-col lg:flex-row justify-center">
+                <button class="wa-chat-item" data-chat="actibisor" aria-selected="false">
+                    <img src="img/Universidad-de-Colima.png" alt="ACTIBISOR">
+                    <span>
+                        <strong>ACTIBISOR</strong>
+                        <small>Proyecto CONACYT</small>
+                    </span>
+                </button>
 
-            <div class="w-auto lg:w-1/2 m-14 text-left md:text-right slide1">
-                <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl">Social Hero</h1>
-                <span class="text-blue-700 text-sm md:text-xl">Jr Software Developer - 2022 (8 months)</span>
-                <ul class="font-light text-3xl mt-4">
-                    <li class="mb-5">
-                        <p class="font-normal text-xl lg:text-2xl mt-4">Maintenance an Web aplication with Laravel 5 and Vue</p>
-                        <p class="font-normal text-xl lg:text-2xl mt-4">Development a new modules with Vue</p>
-                    </li>
-                </ul>
-            </div>
-    
-            <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto slide1">
-                <div class="flex flex-col items-center justify-center text-center curseFirst">
-                    <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                        <div class="text-gray-500 max-w-xs font-light text-xs">
-                          mayo 2022
+                <button class="wa-chat-item" data-chat="uxen" aria-selected="false">
+                    <img src="img/uxen.jpeg" alt="Uxen Neuromarketing">
+                    <span>
+                        <strong>Uxen Neuromarketing</strong>
+                        <small>Mar 2023 - Jun 2023</small>
+                    </span>
+                </button>
+            </aside>
+
+            <section class="wa-thread-panel" aria-live="polite">
+                <article class="wa-thread is-active" data-chat-thread="embotelladora">
+                    <header class="wa-thread-head">
+                        <img src="img/eco.jpg" alt="Embotelladora de Colima">
+                        <div>
+                            <h3>Embotelladora de Colima</h3>
+                            <p>Analista Desarrollador JavaScript | Mayo 2025 - Actualidad</p>
                         </div>
-                     </div>
-                </div>
-    
-                <div class="flex mb-5 curseSecond">
-                    <img class="rounded-full w-12 mr-4 self-end" src="img/SH.png" alt="">
-                    <div class="flex flex-col">
-                        <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                            <p class="mb-1">Social Hero</p>
-                            <small class="text-gray-500 font-light ">Nivaldo, SocialHero need a software developer for the web aplication <a class="underline" href="https://www.socialhero.com.mx" target="_blank">(www.socialhero.com.mx)</a> , would you like to work whit us?</small>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Nivaldo, necesitamos integrar en una sola plataforma reservas, contabilidad y flujos administrativos.</div>
+                        <div class="wa-bubble wa-bubble-out">Listo. Lo abordo con modernizacion web en React, app movil en React Native y APIs .NET/C# con Onion + JWT.</div>
+                        <div class="wa-bubble wa-bubble-out">Tambien agrego pruebas unitarias y de seguridad para backend y frontend.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/eco.jpg" alt="Vista del proyecto Embotelladora de Colima">
+                            <figcaption>Sistema integral empresarial en evolucion, enfocado en operaciones unificadas.</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="wa-thread" data-chat-thread="onkimia">
+                    <header class="wa-thread-head">
+                        <img src="img/onkimia.jpg" alt="Onkimia">
+                        <div>
+                            <h3>Onkimia</h3>
+                            <p>Software Developer | Dic 2024 - Mayo 2025</p>
                         </div>
-                        <small class="text-gray-500 font-light">09:55 am</small>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Necesitamos hacer mas estable la app medica interna y mejorar usabilidad.</div>
+                        <div class="wa-bubble wa-bubble-out">Refactorice modulos clave, propuse mejoras UX/UI y aterrice requerimientos con el area de negocio.</div>
+                        <div class="wa-bubble wa-bubble-out">La plataforma quedo operativa para tratamientos, inventario, citas y agenda.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/onkimia.jpg" alt="Vista del proyecto Onkimia">
+                            <figcaption>Sistema medico interno en uso con mejor mantenibilidad y escalabilidad.</figcaption>
+                        </figure>
                     </div>
-                </div>
-                <div class="flex mb-5 flex-row-reverse curseFourth">
-                    <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                    <div class="flex flex-col">
-                        <div class="bg-blue-700 p-4 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                            <p class="mb-1 text-white">Me</p>
-                            <small class="text-white font-light ">Of course, I will work with you. I'll Develop new modules with Vue Js and Laravel </small>
+                </article>
+
+                <article class="wa-thread" data-chat-thread="socialhero">
+                    <header class="wa-thread-head">
+                        <img src="img/SH.png" alt="SocialHero">
+                        <div>
+                            <h3>SocialHero</h3>
+                            <p>JR Software Developer | Mayo 2022 - Dic 2022</p>
                         </div>
-                        <small class="text-gray-500 font-light self-end">09:58 am</small>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Necesitamos nuevas funcionalidades en pagos y mejor rendimiento general.</div>
+                        <div class="wa-bubble wa-bubble-out">Integre SPEI y PayPal, optimize consultas y trabaje en sprint bajo SCRUM.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/SH.png" alt="Vista del proyecto SocialHero">
+                            <figcaption>Plataforma de pagos y donaciones con mejoras activas en produccion.</figcaption>
+                        </figure>
                     </div>
-                </div>
-                <div class="flex mb-5 curseEight">
-                    <img class="rounded-full w-12 mr-4 self-end" src="img/SH.png" alt="">
-                    <div class="flex flex-col">
-                        <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                            <p class="mb-1">Social Hero</p>
-                            <small class="text-gray-500 font-light ">Great!! thank you Nivaldo </small>
+                </article>
+
+                <article class="wa-thread" data-chat-thread="ciapacov">
+                    <header class="wa-thread-head">
+                        <img src="img/logoSolo.png" alt="CIAPACOV">
+                        <div>
+                            <h3>CIAPACOV</h3>
+                            <p>Full Stack Web Developer | Mar 2020 - Dic 2021</p>
                         </div>
-                        <small class="text-gray-500 font-light">10:01 am</small>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Queremos pagina oficial con pagos en linea y un sistema administrativo interno.</div>
+                        <div class="wa-bubble wa-bubble-out">Se construyo la pagina oficial, gestion de servicios/contratos/facturacion y autoservicio para usuarios.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/logoSolo.png" alt="Vista del proyecto CIAPACOV">
+                            <figcaption>Solucion full stack para operacion institucional y experiencia ciudadana.</figcaption>
+                        </figure>
                     </div>
-                </div>
-            </div>
-    
-    </div>
+                </article>
 
-    <!-- DENTAL CENTER -->
-    <!-- <div class="min-h-screen items-center flex flex-col-reverse lg:flex-row justify-center">
-        <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto curseFirst">
-            <div class="flex flex-col items-center justify-center text-center">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                      Mayo 2020
+                <article class="wa-thread" data-chat-thread="sis">
+                    <header class="wa-thread-head">
+                        <img src="img/educaruno.jpg" alt="EducarUno SIS">
+                        <div>
+                            <h3>EducarUno - Sistema Escolar</h3>
+                            <p>Full Stack Developer | Mayo 2024 - Sep 2024</p>
+                        </div>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Necesitamos un SIS completo para operacion academica.</div>
+                        <div class="wa-bubble wa-bubble-out">Desarrolle gestion de usuarios, calificaciones, contenidos y control academico end-to-end.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/educaruno.jpg" alt="Vista del proyecto EducarUno SIS">
+                            <figcaption>Sistema implementado y en uso en la institucion DOCET.</figcaption>
+                        </figure>
                     </div>
-                 </div>
-            </div>
+                </article>
 
-            <div class="flex mb-5 curseSecond">
-                <img class="rounde12d-full w-12 mr-4 self-end" src="img/logoSolo.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-5 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">Ciapacov</p>
-                        <small class="text-gray-500 font-light ">Hello Nivaldo, I need a web developer for diferents projects</small>
+                <article class="wa-thread" data-chat-thread="cursos">
+                    <header class="wa-thread-head">
+                        <img src="img/educaruno.jpg" alt="EducarUno Cursos Interactivos">
+                        <div>
+                            <h3>EducarUno - Cursos Interactivos</h3>
+                            <p>Frontend Developer | Mayo 2025 - Jul 2025</p>
+                        </div>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Queremos cursos online mas dinamicos con evaluaciones y actividades.</div>
+                        <div class="wa-bubble wa-bubble-out">Desarrolle en React flujos con animaciones, cuestionarios y examenes para mayor participacion.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/educaruno.jpg" alt="Vista del proyecto Cursos Interactivos">
+                            <figcaption>Experiencia educativa moderna orientada a aprendizaje activo.</figcaption>
+                        </figure>
                     </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 curseFourth">
-                <img class="rounde12d-full w-12 mr-4 self-end" src="img/logoSolo.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-6 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">Ciapacov</p>
-                        <small class="text-gray-500 font-light ">Look, First I need new a official web page, whit more features, and other page for transparent information and management content of the page. I also need a web application who consuming a Rest API, and one page for promote my official app </small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-3 flex-row-reverse curseSix">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-3 w-64 md:w-96  rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Sure!!, let me work on it</small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">09:58 am</small>
-                </div>
-            </div>
-            
-            <div class="flex flex-col items-center justify-center text-center curseSeven">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                      January 2021
-                    </div>
-                 </div>
-            </div>
+                </article>
 
-            <div class="flex mb-5 flex-row-reverse curseEight">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-3 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Hello, the Oficial web site is already, and the managment aplication to, you can visit in <a class="underline" href="https://ciapacov.gob.mx" target="_blank">ciapacov.gob.mx</a> and <a class="underline" href="https://ciapadmin.ciapacov.gob.mx" target="_blank">ciapadmin.ciapacov.gob.mx</a> </small>
+                <article class="wa-thread" data-chat-thread="basolutions">
+                    <header class="wa-thread-head">
+                        <img src="img/ba.png" alt="BA Solutions">
+                        <div>
+                            <h3>BA Solutions</h3>
+                            <p>Full Stack Developer | Jul 2023 - Dic 2023</p>
+                        </div>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Necesitamos sistemas internos para manufactura y sector farmaceutico.</div>
+                        <div class="wa-bubble wa-bubble-out">Desarrolle herramientas internas y automatizacion de presupuestos y procesos administrativos.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/ba.png" alt="Vista del proyecto BA Solutions">
+                            <figcaption>Soluciones empresariales para disminuir tareas manuales y mejorar tiempos.</figcaption>
+                        </figure>
                     </div>
-                    <small class="text-gray-500 font-light self-end">05:00 pm</small>
-                </div>
-            </div>
-            <div class="flex mb-5 flex-row-reverse curseNine">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-4 w-64 md:w-96  rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">The web application of contracts and promotional page for offical application ,you can visit in <a class="underline" href="https://micuenta.ciapacov.gob.mx" target="_blank">micuenta.ciapacov.gob.mx</a> and <a class="underline" href="https://app.ciapacov.gob.mx" target="_blank">app.ciapacov.gob.mx</a> </small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">05:15 pm</small>
-                </div>
-            </div>
+                </article>
 
-        </div>
+                <article class="wa-thread" data-chat-thread="actibisor">
+                    <header class="wa-thread-head">
+                        <img src="img/Universidad-de-Colima.png" alt="ACTIBISOR Universidad de Colima">
+                        <div>
+                            <h3>ACTIBISOR - Universidad de Colima</h3>
+                            <p>Software Developer | Proyecto CONACYT</p>
+                        </div>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">La plataforma debe integrar contenido educativo y juegos interactivos.</div>
+                        <div class="wa-bubble wa-bubble-out">Defini arquitectura y desarrollo full stack trabajando con diseno e investigacion.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/Universidad-de-Colima.png" alt="Vista del proyecto ACTIBISOR">
+                            <figcaption>Plataforma educativa digital con recursos interactivos.</figcaption>
+                        </figure>
+                    </div>
+                </article>
 
-        <div class="w-auto lg:w-1/2 m-14 txt-left slide1">
-            <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl mb-1">Castañeda Dental Center</h1>
-            <span class="text-blue-700 text-sm md:text-xl">Free lancer work - Software Developer 2021-2022 (8 months)</span>
-            <p class="font-normal text-xl lg:text-2xl mt-4"> Web Aplication Development of Management of appointments and dental plans with MEAN Stack</p>
-            <p class="font-normal text-xl lg:text-2xl mt-2"> Development of Oficial Website with HTML,TAILWIND CSS,JS </p>
-        </div>
-    </div> -->
-
-    <!-- CIAPACOV -->
-    <div class="min-h-screen items-center flex flex-col-reverse lg:flex-row justify-center">
-        <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto curseFirst">
-            <div class="flex flex-col items-center justify-center text-center">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                      Mayo 2020
+                <article class="wa-thread" data-chat-thread="uxen">
+                    <header class="wa-thread-head">
+                        <img src="img/uxen.jpeg" alt="Uxen Neuromarketing">
+                        <div>
+                            <h3>Uxen Neuromarketing</h3>
+                            <p>Software Developer | Mar 2023 - Jun 2023</p>
+                        </div>
+                    </header>
+                    <div class="wa-thread-body">
+                        <div class="wa-bubble wa-bubble-in">Buscamos soluciones internas para clientes, inventarios y facturacion.</div>
+                        <div class="wa-bubble wa-bubble-out">Integre Firebase y APIs REST para mejorar trazabilidad y operacion diaria.</div>
+                        <figure class="wa-project-shot">
+                            <img src="img/uxen.jpeg" alt="Vista del proyecto Uxen">
+                            <figcaption>Herramientas internas enfocadas en control comercial y administrativo.</figcaption>
+                        </figure>
                     </div>
-                 </div>
-            </div>
-
-            <div class="flex mb-5 curseSecond">
-                <img class="rounde12d-full w-12 mr-4 self-end" src="img/logoSolo.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-5 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">Ciapacov</p>
-                        <small class="text-gray-500 font-light ">Hello Nivaldo, I need a web developer for diferents projects</small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 curseFourth">
-                <img class="rounde12d-full w-12 mr-4 self-end" src="img/logoSolo.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white px-6 py-4 w-64 md:w-96  rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">Ciapacov</p>
-                        <small class="text-gray-500 font-light ">Look, First I need new a official web page, whit more features, and other page for transparent information and management content of the page. I also need a web application who consuming a Rest API, and one page for promote my official app </small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-3 flex-row-reverse curseSix">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-3 w-64 md:w-96  rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Sure!!, let me work on it</small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">09:58 am</small>
-                </div>
-            </div>
-            
-            <div class="flex flex-col items-center justify-center text-center curseSeven">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                      January 2021
-                    </div>
-                 </div>
-            </div>
-
-            <div class="flex mb-5 flex-row-reverse curseEight">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-3 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Hello, the Oficial web site is already, and the managment aplication to, you can visit in <a class="underline" href="https://ciapacov.gob.mx" target="_blank">ciapacov.gob.mx</a> and <a class="underline" href="https://ciapadmin.ciapacov.gob.mx" target="_blank">ciapadmin.ciapacov.gob.mx</a> </small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">05:00 pm</small>
-                </div>
-            </div>
-            <div class="flex mb-5 flex-row-reverse curseNine">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 py-4 w-64 md:w-96  rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">The web application of contracts and promotional page for offical application ,you can visit in <a class="underline" href="https://micuenta.ciapacov.gob.mx" target="_blank">micuenta.ciapacov.gob.mx</a> and <a class="underline" href="https://app.ciapacov.gob.mx" target="_blank">app.ciapacov.gob.mx</a> </small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">05:15 pm</small>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="w-auto lg:w-1/2 m-14 txt-left slide1">
-            <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl mb-1">Ciapacov</h1>
-            <span class="text-blue-700 text-sm md:text-xl">Full Stack Web Developer 2020 - 2021  (1 year and 8 months)</span>
-            <p class="font-normal text-xl lg:text-2xl mt-4"> Development of the Official website (Codeignither 4) and with the content management web application with (Laravel 7)</p>
-            <p class="font-normal text-xl lg:text-2xl mt-2"> Development of a Contract management application with Angular 10 </p>
-            <p class="font-normal text-xl lg:text-2xl mt-2"> Development of a promotional page for ciapacov's mobile app with React JS</p>
-        </div>
-    </div>
-
-    <!-- HOSPITAL COLIMA -->
-    <div class="min-h-screen items-center flex flex-col lg:flex-row justify-center">
-
-        <div class="w-auto lg:w-1/2 m-14 text-left md:text-right slide1">
-            <h1 class="font-medium text-3xl md:text-4xl lg:text-6xl">Hospital Colima</h1>
-            <span class="text-blue-700 text-sm md:text-xl">Back End Developer - 2020 (9 months)</span>
-            <ul class="font-light text-3xl mt-4">
-                <li class="mb-5">
-                    <p class="font-normal text-xl lg:text-2xl mt-4">Development a basic Restful API in Laravel v7 with SQL Server</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="w-auto lg:w-1/2 lg:m-20 lg:overflow-y-auto slide1">
-            <div class="flex flex-col items-center justify-center text-center curseFirst">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                      July 2020
-                    </div>
-                 </div>
-            </div>
-
-            <div class="flex mb-5 curseSecond">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/HClogo.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">Hospital Colima</p>
-                        <small class="text-gray-500 font-light ">Nivaldo, Could you help me to create an API Rest for my local System?</small>
-                    </div>
-                    <small class="text-gray-500 font-light">09:55 am</small>
-                </div>
-            </div>
-            <div class="flex mb-5 flex-row-reverse curseFourth">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-4 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Of course, I'll be working on it. </small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">09:58 am</small>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center justify-center text-center curseSeven">
-                <div class=" mb-4 bg-gray-200 py-1 px-2 shadow-md rounded-full w-48">
-                    <div class="text-gray-500 max-w-xs font-light text-xs">
-                      Febrary 2021
-                    </div>
-                 </div>
-            </div>
-
-            <div class="flex mb-5 flex-row-reverse curseSeven">
-                <img class="rounded-full w-12 ml-4 self-end h-12" src="img/CIUD5281.jpg" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-blue-700 p-5 w-64 md:w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-                        <p class="mb-1 text-white">Me</p>
-                        <small class="text-white font-light ">Hello, the API RestFull for your local application and interfaces are ready.  </small>
-                    </div>
-                    <small class="text-gray-500 font-light self-end">05:00 pm</small>
-                </div>
-            </div>
-            <div class="flex mb-5 curseEight">
-                <img class="rounded-full w-12 mr-4 self-end" src="img/HClogo.png" alt="">
-                <div class="flex flex-col">
-                    <div class="bg-white p-5 w-64 md:w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-                        <p class="mb-1">Hospital Colima</p>
-                        <small class="text-gray-500 font-light ">Great!! thank you Nivaldo </small>
-                    </div>
-                    <small class="text-gray-500 font-light">06:01 pm</small>
+                </article>
+            </section>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- MY STACK -->
     <div class="min-h-screen flex flex-col items-center justify-center container mx-auto mt-20 md:mt-0">
         <div class="text-center slide1">
-            <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium">My Stack</h1>
-            <p class="text-blue-700 text-base md:text-xl lg:text-2xl my-1 lg:my-3">The tools that I use every day</p>
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-medium" data-i18n="stackTitle">Mi stack</h1>
+            <p class="text-blue-700 text-base md:text-xl lg:text-2xl my-1 lg:my-3" data-i18n="stackSubtitle">Tecnologias con las que construyo soluciones de negocio</p>
         </div>
 
         <div class="flex flex-wrap justify-center gap-5">
@@ -798,12 +580,30 @@
                 <img class=" w-11 h-11 md:w-14 md:h-14 lg:w-16 lg:h-16" src="img/git-icon.svg" alt="">
             </span>
         </div>
+
+        <div class="flex flex-wrap justify-center gap-5">
+            <span class="w-24 lg:w-28 lg:h-28 flex items-center p-5 curseTen">
+                <img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="img/dotnet.svg" alt=".NET/C#">
+            </span>
+            <span class="w-24 lg:w-28 lg:h-28 flex items-center p-5 curseTen">
+                <img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="img/nestjs.svg" alt="NestJS">
+            </span>
+            <span class="w-24 lg:w-28 lg:h-28 flex items-center p-5 curseTen">
+                <img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="img/sqlserver.svg" alt="SQL Server">
+            </span>
+            <span class="w-24 lg:w-28 lg:h-28 flex items-center p-5 curseTen">
+                <img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="img/firebase.svg" alt="Firebase">
+            </span>
+            <span class="w-24 lg:w-28 lg:h-28 flex items-center p-5 curseEleven">
+                <img class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src="img/jwt.svg" alt="JWT">
+            </span>
+        </div>
     </div>
 
 
     <!-- CONTACT ME -->
     <div class="mb-12 flex flex-col items-center justify-center slide1 mt-14 md:mt-0">  
-        <button class=" elevator font-semibold mt-5 py-3 px-7 border-0 bg-gradient-to-br from-blue-400 to-blue-500 text-white rounded-xl transform hover:scale-110 motion-reduce:transform-none transition duration-700 ease-in-out"> Use the Elevator</button>
+        <button class=" elevator font-semibold mt-5 py-3 px-7 border-0 bg-gradient-to-br from-blue-400 to-blue-500 text-white rounded-xl transform hover:scale-110 motion-reduce:transform-none transition duration-700 ease-in-out">Volver arriba</button>
     </div>
 
 </body>
